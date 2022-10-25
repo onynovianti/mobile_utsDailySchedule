@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".BuatTask"
+    android:background="@color/bg">
+
+<!--    TUGAS-->
+    <TextView
+        android:id="@+id/labelTugas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:text="Judul Tugas"/>
+
+    <EditText
+        android:id="@+id/tugas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelTugas"
+        android:layout_below="@+id/labelTugas"
+        android:inputType="text"
+        android:maxLength="20"
+        android:hint="Apa yang ingin Anda kerjakan?"
+        >
+        <requestFocus/>
+    </EditText>
+
+<!--    DESKRIPSI-->
+    <TextView
+        android:id="@+id/labelDeskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tugas"
+        android:layout_below="@+id/tugas"
+        android:layout_marginTop="10dp"
+        android:text="Deskripsi"
+        android:hint="Tambah deskripsi tugas Anda"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:paddingTop="10dp"/>
+
+    <EditText
+        android:id="@+id/deskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelDeskripsi"
+        android:layout_below="@+id/labelDeskripsi"
+        android:inputType="text"
+        android:maxLength="20"
+        android:hint="Tambah deskripsi tugas"
+        >
+    </EditText>
+
+<!--    TARGET-->
+    <TextView
+        android:id="@+id/labelTarget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/deskripsi"
+        android:layout_below="@+id/deskripsi"
+        android:layout_marginTop="10dp"
+        android:text="Tanggal Target"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:paddingTop="10dp"/>
+
+    <EditText
+        android:id="@+id/target"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelTarget"
+        android:layout_below="@+id/labelTarget"
+        android:hint="2022-10-25"
+        >
+    </EditText>
+
+<!--    PRIORITY-->
+    <TextView
+        android:id="@+id/labelPriority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/target"
+        android:layout_below="@+id/target"
+        android:layout_marginTop="10dp"
+        android:text="Prioritas"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:paddingTop="10dp"/>
+
+    <EditText
+        android:id="@+id/priority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/labelPriority"
+        android:layout_below="@+id/labelPriority"
+        android:inputType="text"
+        android:maxLength="10"
+        android:hint="High, Medium, atau Low"
+        >
+    </EditText>
+
+<!--    SAVE-->
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/priority"
+        android:layout_alignParentBottom="true"
+        style="?android:attr/borderlessButtonStyle"
+        android:drawableLeft="@drawable/ic_arrow"
+        android:text="Back"
+        android:textColor="@color/black"
+        />
+
+<!--    CANCEL-->
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="@color/black"
+        style="?android:attr/borderlessButtonStyle"
+        android:drawableLeft="@drawable/ic_done"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/priority"
+        android:layout_alignEnd="@+id/priority"
+        />
+
+</RelativeLayout>

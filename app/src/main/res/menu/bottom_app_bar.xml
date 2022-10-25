@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/today"
+        android:title="Today"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_today"
+        android:titleCondensed="today"
+        />
+
+    <item
+        android:id="@+id/all"
+        android:title="All Task"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_allday"
+        android:titleCondensed="all"
+        />
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_logout"
+        android:titleCondensed="logout"
+        />
+
+</menu>
